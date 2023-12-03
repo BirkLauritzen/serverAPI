@@ -6,14 +6,14 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-app.use(express.json()); // Parse JSON body
+app.use(express.json());
 
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'postgres',
     password: '12345678',
-    port: 5432, // Default PostgreSQL port
+    port: 5432,
 });
 
 // Fetch all users
